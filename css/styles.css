@@ -1,0 +1,131 @@
+/* Font poppins */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ESTILIZANDO O CORPO DO HTML */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../img/img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilizando o container */
+
+.container {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
+}
+/* ESTILIZANDO O H1 DO CONTAINER */
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* ESTILIZANDO O INPUT-BOX */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+/* Estilizando o input do input box */
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  border-radius: 40px;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+ /* Estilizando o Placeholder do input-box */
+.input-box input::placeholder {
+  color: #fff;
+}
+/* Estilizando o Icone */
+.input-box i {
+  position: absolute;
+  right: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* Estilizando os inputs "Lembrar senha " && "Esqueci senha" */
+.Remenber-Forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0px 15px;
+}
+
+.Remenber-Forgot label input {
+  accent-color: #fff;
+  margin-right: 5px;
+}
+
+.Remenber-Forgot a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Remenber-Forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Estilizando o botão de login */
+.login-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.Register-Link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.Register-Link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.Register-Link a:hover {
+  text-decoration: underline;
+}
